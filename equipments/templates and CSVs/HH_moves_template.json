@@ -1,0 +1,14 @@
+{
+  "name": "{{name}}",
+  "type": "equippableItem",
+  "img": "{{image}}",
+  "system": {
+    "template": "dQWrtl2pGregVTOA",
+    "props": {
+      "type": "{{type}}",
+      "name": "{{name}}",
+      "move_desc": "{{description}}",
+      "suits":"{{suits}}"
+    }
+ }
+}

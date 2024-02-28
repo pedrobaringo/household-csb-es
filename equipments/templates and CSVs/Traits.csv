@@ -1,0 +1,49 @@
+trait_name,trait_type,trait_desc,image
+Acrobat,Common Trait,"<strong>Acrobat: </strong>Gain a Free Re-roll when performing acrobatics, or breaking a fall.",icons/sundries/gaming/dice-pair-white-green.webp
+Alert,Common Trait,"<strong>Alert: </strong>Gain a Free Re-Roll to avoid an ambush or a danger, or when you try to locate enemies.",icons/sundries/gaming/dice-pair-white-green.webp
+Beastmaster,Common Trait,"<strong>Beastmaster: </strong>Gain a Free Re-roll for all Action or Reaction Rolls made in combat against Large, Huge, or Giant beasts.",icons/sundries/gaming/dice-pair-white-green.webp
+Big and Strong,Common Trait,"<strong>Big and Strong: </strong>Gain +1 to lift, carry or break something.",icons/sundries/gaming/dice-runed-brown.webp
+Braveheart,Common Trait,<strong>Braveheart: </strong>Gain +1 when you need to show courage or strong will.,icons/sundries/gaming/dice-runed-brown.webp
+Brawler,Common Trait,<strong>Brawler: </strong>Gain a Free Re-roll and ignore Conditions during a Brawl.,icons/sundries/gaming/dice-pair-white-green.webp
+Camouflage,Common Trait,<strong>Camouflage: </strong>Gain +1 when camouflaging in the wild.,icons/sundries/gaming/dice-runed-brown.webp
+Counterfeiter,Common Trait,<strong>Counterfeiter: </strong>Gain +1 when you try to counterfeit something.,icons/sundries/gaming/dice-runed-brown.webp
+Deadeye,Common Trait,"<strong>Deadeye: </strong>When using a firearm or ranged weapon, you ignore all drawbacks from Partial Cover and the Nimble Trait of Opponents.",icons/magic/life/cross-yellow-green.webp
+Engineer,Common Trait,<strong>Engineer: </strong>Gain a Free Re-roll when trying to build or repair something.,icons/sundries/gaming/dice-pair-white-green.webp
+Forensic Science,Common Trait,<strong>Forensic Science: </strong>Gain +1 when analyzing a crime scene.,icons/sundries/gaming/dice-runed-brown.webp
+From the Gutter,Common Trait,"<strong>From the Gutter: </strong>You know the slums, and you know your way around criminals and their kind. Gain a Free Re-roll when dealing with the slums.",icons/magic/life/cross-yellow-green.webp
+Gifted Performer,Common Trait,"<strong>Gifted Performer: </strong>Choose an art form (ex: painting, dance, piano...) Gain a Free Re-roll when performing in your chosen art form.",icons/sundries/gaming/dice-pair-white-green.webp
+Hard to Kill,Common Trait,"<strong>Hard to Kill: </strong>After you hit the Crucial Box, you gain +1 to your next Action or Reaction Roll. From then on, you ignore all Conditions until you heal the Stress.",icons/sundries/gaming/dice-runed-brown.webp
+Heartbreaker,Common Trait,<strong>Heartbreaker: </strong>Gain a Free Re-roll when seducing.,icons/sundries/gaming/dice-pair-white-green.webp
+Kind Soul,Common Trait,"<strong>Kind Soul: </strong>Gain +1 when you try to cheer someone up, or when removing emotional Conditions (ex: Embarrassed).",icons/sundries/gaming/dice-runed-brown.webp
+Librarian,Common Trait,"<strong>Librarian: </strong>Gain +1 and ignore Conditions to look for information inside a book or library, to read quickly, or to translate a text.",icons/sundries/gaming/dice-runed-brown.webp
+Master Artisan,Common Trait,"<strong>Master Artisan: </strong>Choose a craft (ex: carpentry, cooking, goldsmithing...) Gain a Free Re-roll when dealing with your craft.",icons/sundries/gaming/dice-pair-white-green.webp
+Mediator,Common Trait,<strong>Mediator: </strong>Gain +1 whenever you try to find a compromise or close a deal.,icons/sundries/gaming/dice-runed-brown.webp
+Nail Thrower,Common Trait,<strong>Nail Thrower: </strong>Gain +1 to use throwing weapons.,icons/sundries/gaming/dice-runed-brown.webp
+Natural Born Leader,Common Trait,<strong>Natural Born Leader: </strong>Gain +1 and ignore Conditions when inspiring or coordinating others.,icons/sundries/gaming/dice-runed-brown.webp
+Panache,Common Trait,"<strong>Panache: </strong>Gain a Free Re-roll whenever you are trying to show elegance and posture, to increase your level of Decorum, or to act gracefully.",icons/sundries/gaming/dice-pair-white-green.webp
+Pathfinder,Common Trait,<strong>Pathfinder: </strong>Gain +1 when looking for trails or trying to find your bearings in the wild.,icons/sundries/gaming/dice-runed-brown.webp
+Perfect Liar,Common Trait,<strong>Perfect Liar: </strong>Gain a Free Re-roll when lying.,icons/sundries/gaming/dice-pair-white-green.webp
+Physician,Common Trait,"<strong>Physician: </strong>Gain a Free Re-roll whenever you’re trying to make a diagnosis, perform surgery, or heal physical Conditions (like Hurt or Sick).",icons/sundries/gaming/dice-pair-white-green.webp
+Pick lock,Common Trait,<strong>Pick lock: </strong>Gain +1 to unlock doors or containers.,icons/sundries/gaming/dice-runed-brown.webp
+Pick pocket,Common Trait,<strong>Pick pocket: </strong>Gain +1 to steal something from someone.,icons/sundries/gaming/dice-runed-brown.webp
+Polyglot,Common Trait,<strong>Polyglot: </strong>You know two additional Languages.,icons/magic/life/cross-yellow-green.webp
+Selfless,Common Trait,"<strong>Selfless: </strong>Gain a Free Re-roll when trying to help or save those in need. If you fail, you take 1 additional Stress.",icons/sundries/gaming/dice-pair-white-green.webp
+Sixth Sense,Common Trait,"<strong>Sixth Sense: </strong>Gain +1 to understand the intentions of a littling, to question, and to see through lies.",icons/sundries/gaming/dice-runed-brown.webp
+Tough as a Nail,Common Trait,<strong>Tough as a Nail: </strong>Gain +1 and ignore Conditions when intimidating or resisting intimidation.,icons/sundries/gaming/dice-runed-brown.webp
+Well-mannered,Common Trait,<strong>Well-mannered: </strong>You know good manners and how to behave with nobles and dignitaries. Gain a Free Re-roll when dealing with high society.,icons/sundries/gaming/dice-pair-white-green.webp
+Stern Presence,Animal Companion: Bettle,"<strong>Stern Presence: </strong>Thanks to your Beetle, you always have a Free Re-roll when rolling to inspire or intimidate others.",icons/sundries/gaming/dice-pair-white-green.webp
+Broadback,Animal Companion: Bettle,"<strong>Broadback: </strong>The Beetle is big enough to be mounted. The Beetle is Helpful when carrying stuff, can be used as Partial Cover to avoid bullets, but it is Hindering when moving stealthily or in small spaces.",icons/magic/life/cross-yellow-green.webp
+Horns and Jaws,Animal Companion: Bettle,"<strong>Horns and Jaws: </strong>Your Beetle is Helpful to hoist, drag, or crash things. You also gain +1 to all Action Rolls made during a Brawl.",icons/sundries/gaming/dice-runed-brown.webp
+Fierce,Animal Companion: Bettle,"<strong>Fierce: </strong>Thanks to your Beetle, and after you fill in your Crucial Box, you have +1 to your next Action or Reaction Roll. From then on, you ignore all Conditions until you heal the Stress.",icons/sundries/gaming/dice-runed-brown.webp
+Cute Little Antennae,Animal Companion: Bumblebee,"<strong>Cute Little Antennae: </strong>Thanks to your Bumblebee, you always have a Free Re-roll when rolling to charm or make a good impres-sion on others.",icons/magic/life/cross-yellow-green.webp
+Scary Jaws,Animal Companion: Bumblebee,"<strong>Scary Jaws: </strong>Thanks to your Bumblebee, you always have a Free Re-roll when rolling to intimidate or question somebody.",icons/sundries/gaming/dice-pair-white-green.webp
+Queen Bumblebee,Animal Companion: Bumblebee,"<strong>Queen Bumblebee: </strong>The Bumblebee is Helpful when dealing with high society, but Hindering in the slums.",icons/magic/life/cross-yellow-green.webp
+Sharp Sting,Animal Companion: Bumblebee,<strong>Sharp Sting: </strong>The Bumblebee allows you to hit targets Within Range as you would with a Ranged Weapon.,icons/magic/life/cross-yellow-green.webp
+Carnival Gecko,Animal Companion: Gecko,"<strong>Carnival Gecko: </strong>Thanks to your Gecko, you always have a Free Re-roll when rolling to dance or perform.",icons/sundries/gaming/dice-pair-white-green.webp
+Extandable Tongue,Animal Companion: Gecko,<strong>Extandable Tongue: </strong>Allows you to hit Close-by as you would with a Reach Weapon.,icons/magic/life/cross-yellow-green.webp
+Camouflage Skin,Animal Companion: Gecko,<strong>Camouflage Skin: </strong>The Gecko Helps you hide and camouflage so long as you stay still.,icons/magic/life/cross-yellow-green.webp
+Prehensil Tail,Animal Companion: Gecko,"<strong>Prehensil Tail: </strong>The Gecko Helps you to pick locks, and to repair or build Gadgets.",icons/magic/life/cross-yellow-green.webp
+Hound Mouse,Animal Companion: Mouse,"<strong>Hound Mouse: </strong>Thanks to your Mouse, you always have a Free Re-roll when rolling to sniff out lies or avoid an ambush.",icons/sundries/gaming/dice-pair-white-green.webp
+Reassuring Presence,Animal Companion: Mouse,"<strong>Reassuring Presence: </strong>Thanks to your Mouse, you always have a Free Re-roll when rolling to heal emotional Conditions or show courage.",icons/sundries/gaming/dice-pair-white-green.webp
+Saddle Mouse,Animal Companion: Mouse,"<strong>Saddle Mouse: </strong>The Mouse is big enough to be mounted. The Mouse Helps you crash, move, or hoist heavy objects, but Hinders you when moving in small spaces.",icons/magic/life/cross-yellow-green.webp
+Fang and Claws,Animal Companion: Mouse,<strong>Fang and Claws: </strong>You have a Free Re-Roll whenever you and your Mouse work to attack or defend from an Opponent.,icons/sundries/gaming/dice-pair-white-green.webp

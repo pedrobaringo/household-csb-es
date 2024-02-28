@@ -1,0 +1,1356 @@
+/* Household - Custom System Builder CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+
+@font-face {
+  font-family: 'LHF_Encore';
+  src: url('../fonts/lhf-encore-distressed.ttf');
+}
+@font-face {
+    font-family: "Mayflower";
+    src: url("../fonts/MAYFLOWERSMOOTHPRO.OTF");
+}
+
+/*--- Sheet background, header, changes in chat fonts ---*/
+
+.sheet {
+	min-width: 380px;
+}
+
+.window-app .window-header {
+    flex: 0 0 30px;
+    overflow: hidden;
+    padding: 0 8px;
+    line-height: 30px;
+	border:none;
+    background-image: url(../sheet/header_bg.webp);
+	background-repeat: no-repeat;
+ 	background-size: cover;
+	color: #575757;
+}
+
+.sheet .custom-system-panel{
+	margin: 0px;
+}
+
+.sheet .custom-system-actor {
+	background: url(../sheet/sheet_bg.webp);
+	background-repeat: no-repeat;
+ 	background-size: cover;
+	color: #3f3f3f;
+}
+
+.chat-message .message-header .message-sender {
+	font-family: 'LHF_Encore', Beau Rivage, cursive;
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+
+.sheet header{
+	align-items: start !important;
+}
+
+.custom-system-template-select{
+	position: relative;
+	top:-50px;
+}
+
+ .sheet .custom-system-actor header.sheet-header .profile-img-container img{
+	object-fit: cover;
+	object-position: center top;
+}
+
+/* --- Char info grid --- */
+
+.grid-char{
+	display: grid;
+	grid-template-columns: 25% 23% 32% 20%;
+	gap: 3px 2px;
+}
+.grid-char div:empty {
+	display:none;
+}
+
+.item-left{
+	grid-column: 1 / span 2;
+}
+
+.item-right{
+	grid-column: 3 / span 2;
+}
+
+.item-right1{
+	grid-column: 3 / span 1;
+}
+.item-right2{
+	grid-column: 4 / span 1;
+}
+
+.item-across{
+	grid-column: 1 / span 4;
+}
+
+/* --- Attributes grid --- */
+
+.grid-attrib{
+	display: grid;
+	grid-template-columns: 40px 50px 25px 25px 25px 25px;
+	grid-template-rows: auto auto auto auto auto;
+}
+
+/* --- Decorum grid --- */
+.grid-decorum{
+	display: grid;
+	width: 100%;
+	height: 70px;
+	margin: auto;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	grid-template-rows: auto auto;
+	align-items: center;
+	justify-content: space-around;
+	align-content: space-evenly;
+	justify-items: center;
+	gap: 5px 2px;
+}
+
+.grid-decorum div{
+	text-align: center;
+}
+
+/* --- Clean Icon and Title in containers ---*/
+.grid-move a.content-link,
+.grid-equip a.content-link,
+.grid-trait a.content-link {
+   background: none;
+   border: none;
+   font-size: 0;
+}
+
+/* --- Traits grid --- */
+
+.grid-trait .custom-system-dynamicRow{
+	display: grid;
+	grid-template-columns: 30px auto 15px;
+	grid-template-rows: auto;
+   	width: 98%;
+  	height: auto;
+  	gap: 5px 5px;
+	margin-bottom: 5px;
+	border-width: 0 0 1px 0;
+	border-color: #404040;
+	border-style: solid;
+}
+
+.grid-trait .custom-system-dynamicRow:last-child {
+	border-width: 0 0 0 0;
+}
+
+.grid-trait .custom-system-item-container-image {
+	position: relative;
+	object-fit: contain;
+	padding: 0px;
+	margin: 0px;
+	max-width: 30px;
+	max-height: 30px;
+	border-radius: 4px;
+	vertical-align: top;
+}
+
+.grid-trait .fa-trash{
+	display:block;
+	position: relative;
+	top: 5px;
+}
+
+
+/* --- Stress grid --- */
+.grid-stress{
+	display: grid;
+	height: 50px;
+	grid-template-columns: 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px;
+	justify-content: center;
+	align-content: center;
+	gap:7px;
+}
+
+.grid-stressOppo{
+	display: grid;
+	width: 100%;
+	grid-template-columns: 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px;
+	justify-content: space-around;
+	align-content:end;
+}
+
+/* --- Conditions --- */
+.cond-grid{
+	display: grid;
+	align-content: center;
+	grid-template-columns: 1fr 30px 30px 1fr;
+	width: 100%;
+	height: 180px;
+}
+
+.cond-textfield{
+	grid-column: 1 / span 4;
+}
+
+/* --- Moves --- */
+.grid-move .custom-system-dynamicRow{
+	display: grid;
+	grid-template-columns: 30px 15px auto 15px;
+	grid-template-rows: auto;
+   	width: 98%;
+  	height: auto;
+  	gap: 5px 5px;
+	margin-bottom: 5px;
+	border-width: 0 0 1px 0;
+	border-color: #404040;
+	border-style: solid;
+}
+
+.grid-move .custom-system-dynamicRow:last-child {
+	border-width: 0 0 0 0;
+}
+
+.grid-move .custom-system-item-container-image {
+	position: relative;
+	object-fit: contain;
+	padding: 0px;
+	margin: 0px;
+	max-width: 30px;
+	max-height: 30px;
+	border-radius: 4px;
+	vertical-align: top;
+}
+
+.grid-move .fa-trash{
+	display:block;
+	position: relative;
+	top: 5px;
+}
+
+/* --- Equipment: show as lines --- */
+.grid-equip {
+	text-align: justify;
+}
+
+.grid-equip .custom-system-dynamicRow{
+	display: grid;
+	grid-template-columns: 40px auto 40px;
+	grid-template-rows: 20px auto auto;
+   	width: 98%;
+  	height: auto;
+  	gap: 0px 2px;
+	margin-top: 5px;
+	border-width: 0 0 1px 0;
+	border-color: #404040;
+	border-style: solid;
+}
+
+.grid-equip .custom-system-dynamicRow:last-child {
+	border-width: 0 0 0 0;
+}
+
+.grid-equip .custom-system-label-root {
+	display: grid;
+}
+
+.grid-equip div{
+	display: grid;
+	font-family: Cambria, Times, 'Times New Roman', serif;
+	text-align: justify;
+}
+
+.grid-equip .custom-system-item-container-image {
+   object-fit: contain;
+   max-width: 40px;
+   max-height: 40px;
+   border: 1px solid black;
+   border-radius: 5px;
+}
+
+.equip-label{
+	font-size: 1rem;
+   	font-weight: bolder;
+  	margin-left: 10px;
+   	width: auto;
+}
+
+.equip-type{
+	display: flex;
+	top: 22px;
+	left: -5px;
+	align-items: baseline;
+	text-transform: capitalize;
+	font-size: 0.70rem;
+}
+
+.equip-price{
+	font-size: medium;
+	text-align: left;
+}
+
+.equip-trait{
+	width: 100%;
+	font-size: 0.8rem;
+	font-style: oblique;
+	font-weight: 600;
+	margin-top: 3px;
+	margin-left: 12px;
+}
+
+.equip-desc{
+	margin-left: 12px;
+}
+
+.grid-equip .fa-trash{
+	display:block;
+	position: relative;
+	justify-content: baseline;
+	top: -10px;
+	margin-left: 15px;
+}
+
+.sheet .chat-icn {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(../sheet/send_chat.svg);
+	flex: 0 0 19px 16px;
+    width: 19px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.chat-card{
+	display: grid;
+	width: 100%;
+	font-family: Cambria, Times, 'Times New Roman', serif;
+	margin-top: 10px;
+	padding: 2px;
+	border: solid 20px;
+    border-image-source: url(../sheet/deco4.svg);
+	border-image-slice: 20 20;
+}
+
+.chat-image{
+	object-fit: contain;
+	max-width: 36px;
+	max-height: 36px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.chat-label{
+	font-size: 1.1rem;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+
+.chat-trait{
+	font-size: 0.85rem;
+	font-style: oblique;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.chat-desc{
+	text-align: justify;
+}
+
+
+/*--- Item Sheet Grid Scheme ---*/
+.grid-item-sheet{
+	display: grid;
+	grid-template-columns: 15% 35% 15% 30%;
+	grid-template-rows: auto auto;
+}
+
+.grid-item-text{
+	grid-column: 1 / span 4;
+}
+
+/* --- Contracts --- */
+.grid-contracts{
+	display: grid;
+	width: 100%;
+	grid-template-columns: auto 1fr;
+}
+
+.grid-contracts div{
+	margin-right: 5px;
+	margin-left: 5px;
+	text-align: justify;
+}
+
+.grid-contracts-cb{
+	grid-column: 1 / span 1;
+}
+
+.grid-contracts-title{
+	grid-column: 2 / span 1;
+}
+
+.grid-contracts-text{
+	grid-column: 1 / span 2;
+}
+
+/*---------------------------------------*/
+/* ROLL SCRIPT PART */
+/*_og refers to Outgunned, another system of the*/
+/*same publisher were this css was first used */
+/*---------------------------------------*/
+
+.header_og {
+    border-bottom: solid 1px #356978;
+  }
+
+
+.roll-result_og {
+	margin-top: 10px;
+	padding: 10px;
+	padding-top: 10px;
+	border: solid 20px;
+    border-image-source: url(../sheet/deco4.svg);
+	border-image-slice: 22 22;
+}
+
+.button_og {
+  display: inline-block;
+  color: white;
+  width: fit-content;
+  background-color: #B1251A;
+  border: none;
+  margin-right:3px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.roll_suc_og {
+	color: #356978;
+	font-size: 18px;
+	margin-left: 20px;
+	font-style: none;
+	text-align: center;
+	font-weight: bold;
+}
+
+.button-container {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.action-button {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*------------------------*/
+/* SHEET PART */
+/*------------------------*/
+
+.sheet .attributes-bg {
+	background: url(../sheet/attributes-bg.webp);
+	background-repeat: no-repeat;
+ 	background-size: contain;
+	background-position: left 10px;
+}
+
+.sheet .hearts-bg {
+	background: url(../sheet/hearts2_bg.webp);
+	background-repeat: no-repeat;
+ 	background-size: auto 140px;
+	background-position: 1px bottom;
+}
+
+.sheet .diamonds-bg {
+	background: url(../sheet/diamonds2_bg.webp);
+	background-repeat: no-repeat;
+ 	background-size: auto 140px;
+	background-position: 1px bottom;
+}
+
+.sheet .clubs-bg {
+	background: url(../sheet/clubs2_bg.webp);
+	background-repeat: no-repeat;
+ 	background-size: auto 140px;
+	background-position: 1px bottom;
+}
+
+.sheet .spades-bg {
+	background: url(../sheet/spades2_bg.webp);
+	background-repeat: no-repeat;
+ 	background-size: auto 140px;
+	background-position: 1px bottom;	
+}
+
+.my-round-border{
+    border: solid 1px  darkolivegreen;
+    border-radius: 5px;
+	text-align: center;
+	padding: 10px;
+	margin: 10px
+}
+
+.dice-text{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: darkolivegreen;
+	color: white;
+	text-align: center;
+	border: solid 1px rgb(62, 62, 62);
+    border-radius: 3px;
+}
+
+.sheet table{
+	background: none;
+	border: none;
+}
+
+.large-text{
+	font-size: x-large;
+}
+
+.my-5{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.w-100{
+	width:100%;
+}
+
+.w-50{
+	width:50%;
+}
+
+.w-25{
+	width:210px;
+	max-width:215px;
+	gap: 0px;
+	margin:0px;
+}
+
+.w-65{
+	width: 315px;
+}
+
+.main-columns{
+	gap:25px;
+}
+
+.h-small{
+	min-height: 50px;
+}
+
+.my-outline{
+	border: 1px solid black;
+	border-radius: 4px;
+	padding: 2px;
+}
+
+.sheet .no-border input[type="text"]{
+	border:none;
+}
+
+.my-deco1 {
+    text-decoration: none;
+    margin-bottom: 10px;
+    background: url(../sheet/deco1.svg);
+	background-size: 350px, auto;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+ .my-deco2 {
+    text-decoration: none;
+	grid-column: 1 / span 6;
+	background-image: url(../sheet/deco2.svg);
+	background-size: 200px, auto;
+    background-repeat: no-repeat;
+    background-position: left top;
+	height: 16px;
+	width: 100%;
+}
+
+.my-deco3 {
+    text-decoration: none;
+	width: 250px;
+	height: 40px;
+    background: url(../sheet/deco2.svg);
+	background-size: 200px, auto;
+	background-repeat: no-repeat;
+	background-position: 2px 28px;
+}
+
+.my-title{
+	font-family: 'LHF_Encore', Beau Rivage, cursive;
+	font-size: 1.35rem;
+	line-height: 4rem;
+}
+
+.my-attrib{
+	font-family: 'LHF_Encore', Beau Rivage, cursive;
+	font-size: 2.0em;
+	font-weight: 500;
+	text-transform: capitalize;
+	grid-column: 1 / span 3;
+	margin-right: 10px;
+	margin-bottom: -5px;
+	align-items: end;
+}
+
+.my-subtitle1{
+	font-family: 'LHF_Encore', Beau Rivage, cursive;
+	font-size: 1.4rem;
+	line-height: 110%;
+	font-weight: bold;
+	text-align: center;
+}
+
+.attrib-cb{
+	transform: scale(1.2);
+	align-items: end;
+}
+
+.decorum-text{
+	font-family: Cambria, Times, 'Times New Roman', serif;
+	font-size: small;
+	text-transform: uppercase;
+}
+
+.my-skill{
+	font-family: Cambria, Times, 'Times New Roman', serif;
+	font-size: small;
+	grid-column: 1 / span 2;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-right: 5px;
+}
+
+.my-quotes{
+	font-family: Cambria, Times, 'Times New Roman', serif;
+	font-style: oblique;
+	font-size: medium;
+}
+
+.custom-system-field-root{
+	padding:0px;
+}
+
+.break-word{
+	word-break: break-word !important;
+}
+
+.no-break{
+	word-break: keep-all;
+}
+
+.no-border{
+	border: none;
+}
+
+.center-text{
+	text-align: center;
+}
+
+.trait-title{
+	font-family: Times, "Times New Roman", Georgia, serif;
+	font-size: normal;
+	line-height: 1.2rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: 2px underline #782e22;
+	text-underline-offset: 3px;
+}
+
+.trait-text{
+	font-family: Times, "Times New Roman", Georgia, serif;
+	font-size: normal;
+	text-align: justify;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.boxes .custom-system-component-root {
+    margin-left: 0px;
+	flex-basis: 0px;
+}
+
+
+/*------------------------*/
+/* CHECKBOXES VOODOO PART */
+/*------------------------*/
+
+.sheet .eye-icn input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(../sheet/eye.svg);
+	flex: 0 0 16px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.sheet .eye-icn input[type="checkbox"]:checked {
+    background: url(../sheet/eye-slash.svg) !important;
+    -webkit-filter: none !important;
+}
+
+.sheet .aces-panel{
+	min-width: 316px;
+	min-height:6em;
+}
+
+.sheet input[type="text"], select{
+	border: none;
+	border-bottom: 1px solid gray;
+	background: none;
+}
+
+.sheet .hearts input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(../sheet/hearts.svg);
+	flex: 0 0 18px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.sheet .hearts input[type="checkbox"]:checked {
+    background: url(../sheet/hearts-filled.svg) !important;
+    -webkit-filter: none !important;
+}
+
+.sheet .diamonds input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(../sheet/diamonds.svg);
+	flex: 0 0 18px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.sheet .diamonds input[type="checkbox"]:checked {
+    background: url(../sheet/diamonds-filled.svg) !important;
+    -webkit-filter: none !important;
+}
+
+.sheet .clubs input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(../sheet/clubs.svg);
+	flex: 0 0 18px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.sheet .clubs input[type="checkbox"]:checked {
+    background: url(../sheet/clubs-filled.svg) !important;
+    -webkit-filter: none !important;
+}
+
+.sheet .spades input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(../sheet/spades.svg);
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	flex: 0 0 18px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.sheet .spades input[type="checkbox"]:checked {
+    background: url(../sheet/spades-filled.svg) !important;
+    -webkit-filter: none !important;
+}
+
+.sheet .decorum input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(../sheet/butterfly.svg);
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	flex: 0 0 27px;
+    width: 27px;
+    height: 22px;
+    cursor: pointer;
+	transform: scale(1.4);
+}
+
+.sheet .decorum input[type="checkbox"]:checked {
+    background: url(../sheet/butterfly-filled.svg) !important;
+    -webkit-filter: none !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+}
+
+.sheet .stress1 input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(../sheet/stress_special.svg);
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	flex: 0 0 20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+	transform: scale(1.2);
+}
+
+.sheet .stress1 input[type="checkbox"]:checked {
+    background: url(../sheet/stress_special-filled.svg) !important;
+    -webkit-filter: none !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+}
+
+.sheet .ace-hearts input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(../sheet/ace-hearts.svg);
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	flex: 0 0 43px;
+    width: 43px;
+    height: 60px;
+    cursor: pointer;
+	transform: translate(50px,14px) rotate(-20deg);
+}
+
+.sheet .ace-hearts input[type="checkbox"]:checked {
+    background: url(../sheet/ace-hearts-filled.svg) !important;
+    -webkit-filter: none !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+}
+
+.sheet .ace-diamonds input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(../sheet/ace-diamonds.svg);
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	flex: 0 0 43px;
+    width: 43px;
+    height: 60px;
+    cursor: pointer;
+	transform: translate(25px,4px) rotate(-10deg);
+}
+
+.sheet .ace-diamonds input[type="checkbox"]:checked {
+    background: url(../sheet/ace-diamonds-filled.svg) !important;
+    -webkit-filter: none !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+}
+
+.sheet .ace-clubs input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(../sheet/ace-clubs.svg);
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	flex: 0 0 43px;
+    width: 43px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.sheet .ace-clubs input[type="checkbox"]:checked {
+    background: url(../sheet/ace-clubs-filled.svg) !important;
+    -webkit-filter: none !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+}
+
+.sheet .ace-spades input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(../sheet/ace-spades.svg);
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	flex: 0 0 43px;
+    width: 43px;
+    height: 60px;
+    cursor: pointer;
+	transform: translate(-25px,4px) rotate(10deg);
+	
+}
+
+.sheet .ace-spades input[type="checkbox"]:checked {
+    background: url(../sheet/ace-spades-filled.svg) !important;
+    -webkit-filter: none !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+}
+
+.sheet .ace-joker input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(../sheet/ace-joker.svg);
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	flex: 0 0 43px;
+    width: 43px;
+    height: 60px;
+    cursor: pointer;
+	transform: translate(-50px,14px) rotate(20deg);
+}
+
+.sheet .ace-joker input[type="checkbox"]:checked {
+    background: url(../sheet/ace-joker-filled.svg) !important;
+    -webkit-filter: none !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+}
+
+.sheet .charname input[type="text"], .itemname input[type="text"]{
+	font-family: 'LHF_Encore', Beau Rivage, cursive;
+	font-weight: bold;
+	border: none;
+  font-size: 35px;
+  padding-left: 10px;
+	line-height:70px;
+	height:70px;
+	margin-top:-10px;
+}
+
+.sheet header.sheet-header h1 input {
+	font-size: 35px;
+    padding-left: 10px;
+	line-height:70px;
+	height:70px;
+	margin-top:-10px;
+}
+.custom-system-sheet-actions {
+	height:0px;
+}
+
+.sheet .circle-cb input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: #fff;
+    flex: 0 0 18px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    outline: 1px solid #3f3f3f;
+    cursor: pointer;
+}
+
+.sheet .circle-cb input[type="checkbox"]:checked {
+    background: #83739A !important;
+	outline: 2px solid #3f3f3f !important;
+    -webkit-filter: none !important;
+}
+
+.sheet .ttt1 input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(../sheet/ttt1.svg);
+	flex: 0 0 22px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.sheet .ttt1 input[type="checkbox"]:checked {
+    background: url(../sheet/ttt1-filled.svg) !important;
+    -webkit-filter: none !important;
+}
+
+.sheet .ttt2 input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(../sheet/ttt2.svg);
+	flex: 0 0 22px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.sheet .ttt2 input[type="checkbox"]:checked {
+    background: url(../sheet/ttt2-filled.svg) !important;
+    -webkit-filter: none !important;
+}
+
+.sheet .ttt3 input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(../sheet/ttt3.svg);
+	flex: 0 0 22px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.sheet .ttt3 input[type="checkbox"]:checked {
+    background: url(../sheet/ttt3-filled.svg) !important;
+    -webkit-filter: none !important;
+}
+
+.sheet .ttt4 input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(../sheet/ttt4.svg);
+	flex: 0 0 22px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.sheet .ttt4 input[type="checkbox"]:checked {
+    background: url(../sheet/ttt4-filled.svg) !important;
+    -webkit-filter: none !important;
+}
+
+.sheet .ttt5 input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(../sheet/ttt5.svg);
+	flex: 0 0 22px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.sheet .ttt5 input[type="checkbox"]:checked {
+    background: url(../sheet/ttt5-filled.svg) !important;
+    -webkit-filter: none !important;
+}
+
+.custom-system-actor .editor{
+	min-height: 10px;
+}
+.chat-message .message-content {
+	font-family: 'Mayflower';
+	font-size: 15px;
+}
+.chat-message .message-content h1{
+	font-family: 'LHF_Encore', Beau Rivage, cursive;
+	font-weight: 600;
+	text-align:center;
+	font-size:35px;
+	border:0px;
+}
+.chat-message .message-header .message-sender{
+	font-family: 'LHF_Encore', Beau Rivage, cursive;
+	text-align:center;
+	font-size:30px;
+	text-wrap: wrap;
+	line-height:80%;
+	margin-top:5px;
+	margin-bottom:5px;
+	color: #671308;
+	white-space: normal;
+}
+.chat-message .message-header {
+	border-bottom:2px solid #671308;
+}
+.message .message-header .message-metadata {
+	flex:0 0 50px;
+	margin-left: 0;
+}
+.message-timestamp {
+	text-wrap: wrap;
+	font-size:10px;
+}
+.custom-system-actor-content {
+	font-family: 'Mayflower';
+	font-size: 16px;
+}
+.custom-system-actor-content p{
+	font-family: 'Mayflower';
+	font-size: 15px;
+}
+.tablabels .item.active{
+	text-decoration: underline;
+	color:black;
+}
+.tablabels nav{
+	font-size:20px;
+}
+.custom-system-rollable{
+	color: #6a0000;
+	text-shadow: 0px 0px 5px #fcfbf8,0px 0px 5px #fcfbf8,0px 0px 10px #fcfbf8,0px 0px 10px #fcfbf8,0px 0px 10px #fcfbf8,0px 0px 10px #fcfbf8;
+}
+.chat-message {
+	background: url(../sheet/sheet_bg.webp);
+	background-repeat: no-repeat;
+ 	background-size: 100% 100%;
+	background-clip: border-box;
+}
+.d6_og_suc {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	color: white;
+	border: 0px solid black;
+	border-radius: 5px;
+	margin: 3px;
+	text-align: center;
+}
+
+.d6_og_rem {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	color: black;
+	border: 0px;
+	border-radius: 5px;
+	margin: 3px;
+	text-align: center;
+}
+.d6_og_suc img{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	color: white;
+	border: 0px solid black;
+	border-radius: 5px;
+	margin: 3px;
+	text-align: center;
+}
+
+.d6_og_rem img{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	color: black;
+	border: 0px;
+	border-radius: 5px;
+	margin: 3px;
+	text-align: center;
+}
+.dice-rolls_household {
+	padding:0px;
+	display:flex;
+	justify-content: center;
+	flex-wrap:wrap;
+}
+.window-app .window-content {
+		background: url(../sheet/sheet_bg.webp);
+	background-repeat: no-repeat;
+ 	background-size: cover;
+}
+.custom-system-user-inputs {
+	font-family: 'Mayflower';
+	font-size: 17px;;
+	font-weight: 600;
+}
+.custom-system-user-inputs thead{
+	display: none;
+}
+.custom-system-user-inputs{
+	background:transparent;
+	border:0px;
+}
+.custom-system-user-inputs td:first-child {
+	font-family: 'LHF_Encore', Beau Rivage, cursive;
+	font-size: 20px;
+	font-weight: 600;
+	text-align:center;
+	width:50%;
+}
+.custom-system-user-input-button[data-action="sub-10"] {
+	display:none;
+}
+.custom-system-user-input-button[data-action="add-10"] {
+	display:none;
+}
+.custom-system-user-input-block {
+	text-align:center;
+}
+.custom-system-user-inputs tr:nth-child(even) {
+	background-color:  transparent;
+}
+.dialog-content {
+	font-family: 'Mayflower';
+	font-size: 17px;
+	margin-bottom:5px;
+}
+.dialog-buttons button{
+	font-family: 'Mayflower';
+	font-size: 17px;
+}
+.householddice {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-image: none;
+	background-color: transparent;
+	color: white;
+	border: 0px solid black;
+	border-radius: 5px;
+	margin: 3px;
+	text-align: center;
+}
+.householddice img{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	color: white;
+	border: 0px solid black;
+	border-radius: 5px;
+	margin: 3px;
+	text-align: center;
+}
+.dice-tooltip .dice-rolls .roll.success, .dice-tooltip .dice-rolls .roll.max {
+	filter: none;
+}
+.dice-tooltip .dice-rolls .roll.success, .dice-tooltip .dice-rolls .roll.min {
+	filter: none;
+}
+.checkboxgeneric {
+	margin:0px;
+}
+.stress1 {
+	margin:0px;
+}
+.checkboxgeneric [type="checkbox"]{
+	-webkit-appearance: initial;
+    appearance: initial;
+	border-color: black;
+	border-width:1px;
+	border-style: solid;
+	margin:0px;
+	background-color:transparent;
+}
+.checkboxgeneric input[type="checkbox"]:checked {
+	-webkit-appearance: initial;
+    appearance: initial;
+	border-color: black;
+	border-width:1px;
+	border-style: solid;
+	margin:0px;
+	background: url('../assets/CheckActivosMarcado.webp');
+	background-repeat: no-repeat;
+ 	background-size: contain;
+	background-position: center;
+   position:relative;
+}
+.grid-contracts-cb [type="checkbox"]{
+	-webkit-appearance: initial;
+    appearance: initial;
+	border-color: black;
+	border-width:1px;
+	border-style: solid;
+	background-color:transparent;
+}
+.grid-contracts-cb input[type="checkbox"]:checked {
+	-webkit-appearance: initial;
+    appearance: initial;
+	border-color: black;
+	border-width:1px;
+	border-style: solid;
+	background: url('../assets/CheckActivosMarcado.webp');
+	background-repeat: no-repeat;
+ 	background-size: contain;
+	background-position: center;
+   position:relative;
+}
+.message img.chat-portrait-message-portrait-generic {
+	mix-blend-mode: darken;
+	border:0px;
+}
+.sheet .custom-system-actor header.sheet-header .profile-img-container img {
+	mix-blend-mode: darken;
+}
+.custom-system-actor .profile-img-container {
+	border:0px;
+}
+.grid-contracts-cb [type="checkbox"]{
+	text-align:left;
+	margin-top:15px;
+}
+.contractname {
+	display:grid;
+	grid-template-columns: auto auto;
+	gap:0px;
+	width:100%;
+	text-align:center;
+}
+.contracts-text-object h2{
+	font-family: 'LHF_Encore', Beau Rivage, cursive;
+    font-size: 1.4rem;
+    line-height: 110%;
+    font-weight: bold;
+    text-align: center;
+	border-bottom: 1px solid var(--color-underline-header);
+}
+.contracts-text-object p{
+	text-align: center;
+}
+.tablacontratos .custom-system-dynamicRow {
+	display:grid;
+	grid-template-columns: 98%;
+	text-align:center;
+	justify-content:center;
+}
+.tablacontratos .custom-system-dynamicRow td:first-child {
+	text-align:center;
+}
+.tablacontratos .custom-system-dynamicRow td:first-child a{
+	font-family: 'LHF_Encore', Beau Rivage, cursive;
+    font-size: 1.5rem;
+    line-height: 110%;
+    font-weight: bold;
+    text-align: center;
+	color: #3f3f3f;
+}
+.tablacontratos .custom-system-dynamicRow td:first-child a img{
+	display:none;
+}
+.tablacontratos .custom-system-dynamicRow .custom-system-dynamic-table-row-icons {
+	justify-content:center;
+}
+.precio {
+	font-size: x-large;
+}
+.precio input[type="text"]{
+	text-align:center;
+}
+.blue-text {
+	color: #2062ac;
+}
+.red-text {
+	color: #c61618;
+}
+.green-text {
+	color: #248736;
+}
+.black-text {
+	color: black;
+}
+.message img.chat-portrait-message-portrait-generic {
+	width:80px;
+	height:80px;
+}
+.subpanelstress .checkboxgeneric{
+	margin:0px;
+	padding-top:3px;
+}
+.subpanelstress div:empty{
+	display:none;
+}
+.panelcajascruc {
+	margin:0px;
+	display:grid;
+	grid-template-columns:20% 75%;
+}

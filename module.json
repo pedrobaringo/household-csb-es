@@ -1,0 +1,122 @@
+{
+  "id": "household-csb-es",
+  "title": "Household CSB (ES)",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11"
+  },
+  "relationships": {
+    "requires": [
+      {
+        "id": "dice-so-nice",
+        "type": "module",
+        "compatibility": {}
+      }
+    ],
+    "systems": [
+      {
+        "id": "custom-system-builder",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+  "authors": [
+    {
+      "name": "Pedro Baringo",
+	  "url": "https://github.com/pedrobaringo",
+	  "discord": "pedrobari",
+	  "github": "pedrobaringo",
+      "flags": {}
+    }
+  ],
+  "packs": [
+    {
+      "name": "actores",
+      "label": "Actores",
+      "path": "packs/actores",
+      "type": "Actor",
+      "system": "custom-system-builder",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "objetos",
+      "label": "Objetos",
+      "path": "packs/objetos",
+      "type": "Item",
+      "system": "custom-system-builder",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "macros",
+      "label": "Macros",
+      "path": "packs/macros",
+      "type": "Macro",
+      "system": "custom-system-builder",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "rolltables",
+      "label": "Rolltables",
+      "path": "packs/rolltables",
+      "type": "RollTable",
+      "system": "custom-system-builder",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "pjs-y-enemigos",
+      "label": "PJs y Enemigos",
+      "path": "packs/pjs-y-enemigos",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "custom-system-builder"
+    },
+    {
+      "name": "entradas-de-diario",
+      "label": "Entradas de Diario",
+      "path": "packs/entradas-de-diario",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "custom-system-builder"
+    },
+    {
+      "name": "objetos-y-otros",
+      "label": "Objetos y Otros",
+      "path": "packs/objetos-y-otros",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "custom-system-builder"
+    }
+  ],
+  "styles": [
+    "styles/household.css"
+  ],
+  "esmodules": [
+    "modules/householddice.js"
+  ],
+  "url": "https://github.com/pedrobaringo/household-csb-es",
+  "manifest": "https://github.com/pedrobaringo/household-csb-es/releases/latest/download/module.json",
+  "download": "https://github.com/pedrobaringo/household-csb-es/releases/download/1.0.0/household-csb-es.zip"
+}

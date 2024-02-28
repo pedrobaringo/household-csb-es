@@ -1,0 +1,15 @@
+{
+  "name": "{{name}}",
+  "type": "equippableItem",
+  "img": "{{image}}",
+  "system": {
+    "template": "TWjdFquYTasOfW4z",
+    "props": {
+      "type": "{{type}}",
+      "name": "{{name}}",
+      "description": "{{description}}",
+      "traits": "{{traits}}",
+      "price": "{{price}}"
+    }
+ }
+}

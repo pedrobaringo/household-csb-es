@@ -1,0 +1,25 @@
+{
+  "name": "{{name}}",
+  "type": "character",
+  "img": "icons/creatures/magical/spirit-fear-energy-pink.webp",
+  "system": {
+    "template": "iDvP0kgoDvDBEFZQ",
+    "props": {
+      "Oponnent_level_label": "{{opponent_level}}",
+      "threatLevel": {{level}},
+      "stressAmount": {{stress_amount}},
+      "stressOppo_marks": "{{crucial_boxes}}",
+      "moveOpp_name": "{{moves_name}}",
+      "traitsOpponent": "{{traits}}",
+      "optTraitsOpponent": "{{optional_traits}}",
+      "actionOpp_1": "{{action1}}",
+      "actionOpp_2": "{{action2}}",
+      "actionOpp_3": "{{action3}}",
+      "actionOpp_4": "{{action4}}",
+      "actionOpp_5": "{{action5}}",
+      "actionOpp_6": "{{action6}}",
+      "move_opp_description": "{{moves_desc}}",
+      "opponent_desc": "{{character_description}}"
+    }
+ }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "{{trait_name}}",
+  "type": "equippableItem",
+  "img": "icons/skills/targeting/crosshair-mark-rough-pink.webp",
+  "system": {
+    "template": "bWo7O9bWa7u6VrkI",
+    "props": {
+      "name": "{{trait_name}}",
+      "oppoTrait_desc": "{{trait_desc}}"
+    }
+ }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "{{trait_name}}",
+  "type": "equippableItem",
+  "img": "{{image}}",
+  "system": {
+    "template": "ZxXadV8b9hgkCteF",
+    "props": {
+      "name": "{{trait_name}}",
+      "trait_type": "{{trait_type}}",
+      "trait_desc": "{{trait_desc}}"
+    }
+ }
+}
