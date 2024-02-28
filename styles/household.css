@@ -1354,3 +1354,18 @@
 	display:grid;
 	grid-template-columns:20% 75%;
 }
+.hhd6 img {
+	height:40px;
+	border:0px;
+}
+.dice-roll .dice-formula {
+	display:none;
+}
+.dice-roll .dice-tooltip {
+	display: block;
+}
+.dice-tooltip .dice-rolls {
+	display:flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
