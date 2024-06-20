@@ -592,6 +592,15 @@
 	font-family: 'LHF_Encore', Beau Rivage, cursive;
 	font-size: 1.35rem;
 	line-height: 4rem;
+	margin-top: -2rem;
+}
+
+.my-title2 {
+    font-family: 'LHF_Encore', Beau Rivage, cursive;
+    font-size: 1.35rem;
+    line-height: 4rem;
+	margin-top: -2rem;
+	pointer-events: none;
 }
 
 .my-attrib{
@@ -704,7 +713,7 @@
 
 .sheet .aces-panel{
 	min-width: 316px;
-	min-height:6em;
+    min-height: 4em;
 }
 
 .sheet input[type="text"], select{
@@ -1231,6 +1240,7 @@
 	border-style: solid;
 	margin:0px;
 	background-color:transparent;
+	cursor: pointer;
 }
 .checkboxgeneric input[type="checkbox"]:checked {
 	-webkit-appearance: initial;
@@ -1266,11 +1276,7 @@
    position:relative;
 }
 .message img.chat-portrait-message-portrait-generic {
-	mix-blend-mode: darken;
 	border:0px;
-}
-.sheet .custom-system-actor header.sheet-header .profile-img-container img {
-	mix-blend-mode: darken;
 }
 .custom-system-actor .profile-img-container {
 	border:0px;
@@ -1313,6 +1319,8 @@
     font-weight: bold;
     text-align: center;
 	color: #3f3f3f;
+	background: transparent;
+	border:0px;
 }
 .tablacontratos .custom-system-dynamicRow td:first-child a img{
 	display:none;
@@ -1368,4 +1376,35 @@
 	display:flex;
 	justify-content: center;
 	flex-wrap: wrap;
+}
+.left_conditions {
+	justify-content: end;
+}
+.sheet .custom-system-panel .panelconddef {
+	column-gap:25px;
+	row-gap:0px;
+	display:grid;
+	width: fit-content;
+	margin:auto;
+}
+.panelcond_izq {
+	gap:0px;
+	display:grid;
+	grid-template-columns:75% 25%;
+	width: fit-content;
+}
+.condextra {
+	grid-column: 1 / span 2;
+	gap: 0px;
+    display: grid;
+    grid-template-columns: 85% 15%;
+	width:91.6%;
+}
+.textcond input[type="text"]{
+	text-align:center;
+}
+.grid-contracts-cb [type="checkbox"] {
+    text-align: left;
+    margin-top: -20px;
+	cursor: pointer;
 }
