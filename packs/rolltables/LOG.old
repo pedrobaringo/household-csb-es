@@ -1,8 +1,8 @@
-2024/06/19-14:23:36.960858 7f2bef7fe700 Recovering log #488
-2024/06/19-14:23:36.969273 7f2bef7fe700 Delete type=3 #486
-2024/06/19-14:23:36.969319 7f2bef7fe700 Delete type=0 #488
-2024/06/19-14:23:39.071414 7f2becdee700 Level-0 table #493: started
-2024/06/19-14:23:39.071442 7f2becdee700 Level-0 table #493: 0 bytes OK
-2024/06/19-14:23:39.074020 7f2becdee700 Delete type=0 #491
-2024/06/19-14:23:39.076440 7f2becdee700 Manual compaction at level-0 from '!folders!SSxxkSrNrz4zgJba' @ 72057594037927935 : 1 .. '!tables.results!uVJuvk5VFIOk40xI.x3o5zYRbkK2AVQgH' @ 0 : 0; will stop at (end)
-2024/06/19-14:23:39.078860 7f2becdee700 Manual compaction at level-1 from '!folders!SSxxkSrNrz4zgJba' @ 72057594037927935 : 1 .. '!tables.results!uVJuvk5VFIOk40xI.x3o5zYRbkK2AVQgH' @ 0 : 0; will stop at (end)
+2024/06/21-15:48:10.062 12e4 Recovering log #503
+2024/06/21-15:48:10.066 12e4 Delete type=0 #503
+2024/06/21-15:48:10.066 12e4 Delete type=3 #502
+2024/06/21-15:55:37.907 4aac Level-0 table #507: started
+2024/06/21-15:55:37.907 4aac Level-0 table #507: 0 bytes OK
+2024/06/21-15:55:37.909 4aac Delete type=0 #505
+2024/06/21-15:55:37.918 4aac Manual compaction at level-0 from '!folders!SSxxkSrNrz4zgJba' @ 72057594037927935 : 1 .. '!tables.results!uVJuvk5VFIOk40xI.x3o5zYRbkK2AVQgH' @ 0 : 0; will stop at (end)
+2024/06/21-15:55:37.925 4aac Manual compaction at level-1 from '!folders!SSxxkSrNrz4zgJba' @ 72057594037927935 : 1 .. '!tables.results!uVJuvk5VFIOk40xI.x3o5zYRbkK2AVQgH' @ 0 : 0; will stop at (end)
