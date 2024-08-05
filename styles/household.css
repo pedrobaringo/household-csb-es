@@ -1408,3 +1408,6 @@
     margin-top: -20px;
 	cursor: pointer;
 }
+.dice-tooltip .dice-rolls .roll.d6 {
+	background: transparent;
+}
