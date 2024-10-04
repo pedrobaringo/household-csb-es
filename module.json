@@ -1,10 +1,10 @@
 {
   "id": "household-csb-es",
   "title": "Household CSB (ES)",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "compatibility": {
     "minimum": "11",
-    "verified": "11"
+    "verified": "12.331"
   },
   "relationships": {
     "requires": [
@@ -20,7 +20,7 @@
         "type": "system",
         "compatibility": {
 		"minimum": "3.1.2",
-		"verified": "3.1.2"
+		"verified": "4.0.0"
 		}
       }
     ]
@@ -122,5 +122,5 @@
   ],
   "url": "https://github.com/pedrobaringo/household-csb-es",
   "manifest": "https://github.com/pedrobaringo/household-csb-es/releases/latest/download/module.json",
-  "download": "https://github.com/pedrobaringo/household-csb-es/releases/download/1.0.7/household-csb-es.zip"
+  "download": "https://github.com/pedrobaringo/household-csb-es/releases/download/1.1.0/household-csb-es.zip"
 }

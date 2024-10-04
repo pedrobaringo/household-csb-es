@@ -1,8 +1,15 @@
-2024/08/05-16:04:53.452976 7f2beffff700 Recovering log #683
-2024/08/05-16:04:53.460388 7f2beffff700 Delete type=3 #681
-2024/08/05-16:04:53.460425 7f2beffff700 Delete type=0 #683
-2024/08/05-16:43:39.420622 7f2becdee700 Level-0 table #688: started
-2024/08/05-16:43:39.421253 7f2becdee700 Level-0 table #688: 0 bytes OK
-2024/08/05-16:43:39.424230 7f2becdee700 Delete type=0 #686
-2024/08/05-16:43:39.428449 7f2becdee700 Manual compaction at level-0 from '!tables!BWYFEGie0c2F2zib' @ 72057594037927935 : 1 .. '!tables.results!uVJuvk5VFIOk40xI.x3o5zYRbkK2AVQgH' @ 0 : 0; will stop at (end)
-2024/08/05-16:43:39.428985 7f2becdee700 Manual compaction at level-1 from '!tables!BWYFEGie0c2F2zib' @ 72057594037927935 : 1 .. '!tables.results!uVJuvk5VFIOk40xI.x3o5zYRbkK2AVQgH' @ 0 : 0; will stop at (end)
+2024/10/03-10:19:07.606 25a4 Recovering log #927
+2024/10/03-10:19:07.611 25a4 Delete type=0 #927
+2024/10/03-10:19:07.611 25a4 Delete type=3 #925
+2024/10/03-10:21:11.910 3f1c Level-0 table #932: started
+2024/10/03-10:21:11.913 3f1c Level-0 table #932: 8721 bytes OK
+2024/10/03-10:21:11.918 3f1c Delete type=0 #930
+2024/10/03-10:21:11.919 3f1c Manual compaction at level-0 from '!tables!BWYFEGie0c2F2zib' @ 72057594037927935 : 1 .. '!tables.results!uVJuvk5VFIOk40xI.x3o5zYRbkK2AVQgH' @ 0 : 0; will stop at (end)
+2024/10/03-10:21:11.959 3f1c Manual compaction at level-1 from '!tables!BWYFEGie0c2F2zib' @ 72057594037927935 : 1 .. '!tables.results!uVJuvk5VFIOk40xI.x3o5zYRbkK2AVQgH' @ 0 : 0; will stop at '!tables.results!uVJuvk5VFIOk40xI.x3o5zYRbkK2AVQgH' @ 221 : 1
+2024/10/03-10:21:11.959 3f1c Compacting 1@1 + 1@2 files
+2024/10/03-10:21:11.962 3f1c Generated table #933@1: 54 keys, 8721 bytes
+2024/10/03-10:21:11.962 3f1c Compacted 1@1 + 1@2 files => 8721 bytes
+2024/10/03-10:21:11.965 3f1c compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/10/03-10:21:11.965 3f1c Delete type=2 #512
+2024/10/03-10:21:11.965 3f1c Delete type=2 #932
+2024/10/03-10:21:11.965 3f1c Manual compaction at level-1 from '!tables.results!uVJuvk5VFIOk40xI.x3o5zYRbkK2AVQgH' @ 221 : 1 .. '!tables.results!uVJuvk5VFIOk40xI.x3o5zYRbkK2AVQgH' @ 0 : 0; will stop at (end)
