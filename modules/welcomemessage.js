@@ -82,7 +82,7 @@ Hooks.once("ready", function() {
 						game.user.setFlag("household-csb-es", "welcomeMessage", true);
 						game.user.setFlag("household-csb-es", "lastVersion", game.modules.get("household-csb-es").version);
 						setTimeout(() => {
-							game.macros.getName('Roll - Reroll - All In (Integrado)').update({permission:{default:2}});
+							game.macros.getName('Roll - Reroll - All In (Integrado)').update({ownership:{default:2}});
 						}, 5000);
 					});
 				}
@@ -142,7 +142,7 @@ Hooks.once("ready", function() {
 						}, 500);
 						game.user.setFlag("household-csb-es", "lastVersion", game.modules.get("household-csb-es").version);
 						setTimeout(() => {
-							game.macros.getName('Roll - Reroll - All In (Integrado)').update({permission:{default:2}});
+							game.macros.getName('Roll - Reroll - All In (Integrado)').update({ownership:{default:2}});
 						}, 5000);
 					});
 				}
