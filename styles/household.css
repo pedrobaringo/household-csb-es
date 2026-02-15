@@ -13,33 +13,103 @@
 
 /*--- Sheet background, header, changes in chat fonts ---*/
 
-.sheet {
-	min-width: 380px;
-}
-
-.window-app .window-header {
-    flex: 0 0 30px;
-    overflow: hidden;
-    padding: 0 8px;
-    line-height: 30px;
-	border:none;
-    background-image: url(../sheet/header_bg.webp);
-	background-repeat: no-repeat;
- 	background-size: cover;
-	color: #575757;
-}
-
-.sheet .custom-system-panel{
-	margin: 0px;
-}
-
-.sheet .custom-system-actor {
+.character .window-content, .equippableItem .window-content, .custom-dialog .window-content {
 	background: url(../sheet/sheet_bg.webp);
 	background-repeat: no-repeat;
- 	background-size: cover;
+ 	background-size: 100% 100%;
+	padding:1rem;
 	color: #3f3f3f;
 }
-
+.character .grid {
+	margin-top:0px;
+	margin-bottom:0px;
+}
+.character input[type=text], .equippableItem input[type=text], .custom-dialog input[type=text]{
+	box-shadow:0px 0px;
+	color: #3f3f3f;
+    background:transparent;
+	height:24px;
+	font-family: "Mayflower";
+	border: none;
+	border-bottom: 1px solid gray;
+	background: none;
+}
+.character input[type=number], .equippableItem input[type=number], .custom-dialog input[type=number]{
+	box-shadow:0px 0px;
+	color: #3f3f3f;
+    background:transparent;
+	height:24px;
+	font-family: "Mayflower";
+	border: none;
+	border-bottom: 1px solid gray;
+	background: none;
+}
+.character select, .equippableItem select, .custom-dialog select{
+	background:transparent;
+	color: #3f3f3f;
+	height:24px;
+	font-family: "Mayflower";
+	border: none;
+	border-bottom: 1px solid gray;
+	background: none;
+}
+.custom-system-user-inputs td button {
+    color: #3f3f3f;
+	border: none;
+	border-bottom: 1px solid gray;
+	background: none;
+}
+.character summary:before, .equippableItem summary:before, .custom-dialog summary:before {
+	border-color: transparent transparent transparent #000000;
+}
+.character input[type="checkbox"]::before, .equippableItem input[type="checkbox"]::before, .custom-dialog input[type="checkbox"]::before {
+    content:"";
+    color: #3f3f3f;
+    font-weight:normal;
+}
+.character  input[type="checkbox"]:checked::after, .equippableItem  input[type="checkbox"]:checked::after, .custom-dialog  input[type="checkbox"]:checked::after {
+    content: "";
+    color: #3f3f3f;
+}
+.character input[type="checkbox"]:checked::before, .equippableItem input[type="checkbox"]:checked::before,  .custom-dialog input[type="checkbox"]:checked::before {
+    content: "";
+    color: transparent;
+}
+.custom-dialog .form-group > label {
+	color: #3f3f3f;
+}
+.character table, .equippableItem table, .custom-dialog table {
+	background:transparent;
+}
+.custom-system-number-field-control {
+	background:transparent;
+	color:#3f3f3f;
+	border:1px solid #3f3f3f;
+}
+.character input[type="radio"]::before, .equippableItem input[type="radio"]::before, .custom-dialog input[type="radio"]::before {
+    content:"\f10c";
+    color: #3f3f3f;
+    font-weight:normal;
+}
+.character input[type="radio"]:checked::before, .character  input[type="radio"]:checked::after, .equippableItem input[type="radio"]:checked::before,  .equippableItem  input[type="radio"]:checked::after, .custom-dialog input[type="radio"]:checked::before, .custom-dialog  input[type="radio"]:checked::after {
+    content: "\f192";
+    color: #3f3f3f;
+}
+.character .content-link, .equippableItem .content-link, .custom-dialog .content-link {
+  background:transparent;
+  color: #3f3f3f;
+  border: 0px;
+}
+.custom-system-user-input-button {
+    background: rgba(0, 0, 0, 0.05);
+    border: 2px groove #3f3f3f;
+    color: #3f3f3f
+}
+.custom-dialog .standard-form .form-footer > button {
+  color:#3f3f3f;
+  background:transparent;
+  border: 2px groove #3f3f3f;
+}
 .chat-message .message-header .message-sender {
 	font-family: 'LHF_Encore', Beau Rivage, cursive;
 	font-size: 1.3rem;
@@ -49,12 +119,6 @@
 .sheet header{
 	align-items: start !important;
 }
-
-.custom-system-template-select{
-	position: relative;
-	top:-50px;
-}
-
  .sheet .custom-system-actor header.sheet-header .profile-img-container img{
 	object-fit: cover;
 	object-position: center top;
@@ -62,7 +126,7 @@
 
 /* --- Char info grid --- */
 
-.grid-char{
+.grid-char  > :first-child{
 	display: grid;
 	grid-template-columns: 25% 23% 32% 20%;
 	gap: 3px 2px;
@@ -92,14 +156,14 @@
 
 /* --- Attributes grid --- */
 
-.grid-attrib{
+.grid-attrib > :first-child{
 	display: grid;
 	grid-template-columns: 40px 50px 25px 25px 25px 25px;
 	grid-template-rows: auto auto auto auto auto;
 }
 
 /* --- Decorum grid --- */
-.grid-decorum{
+.grid-decorum > :first-child{
 	display: grid;
 	width: 100%;
 	height: 70px;
@@ -140,6 +204,9 @@
 	border-color: #404040;
 	border-style: solid;
 }
+.grid-trait .custom-system-dynamicRow td:last-child {
+	padding:0px;
+}
 
 .grid-trait .custom-system-dynamicRow:last-child {
 	border-width: 0 0 0 0;
@@ -164,7 +231,7 @@
 
 
 /* --- Stress grid --- */
-.grid-stress{
+.grid-stress > :first-child{
 	display: grid;
 	height: 50px;
 	grid-template-columns: 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px;
@@ -173,7 +240,7 @@
 	gap:7px;
 }
 
-.grid-stressOppo{
+.grid-stressOppo > :first-child{
 	display: grid;
 	width: 100%;
 	grid-template-columns: 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px;
@@ -182,7 +249,7 @@
 }
 
 /* --- Conditions --- */
-.cond-grid{
+.cond-grid > :first-child{
 	display: grid;
 	align-content: center;
 	grid-template-columns: 1fr 30px 30px 1fr;
@@ -206,6 +273,9 @@
 	border-width: 0 0 1px 0;
 	border-color: #404040;
 	border-style: solid;
+}
+.grid-move .custom-system-dynamicRow td:last-child{
+	padding:0px;
 }
 
 .grid-move .custom-system-dynamicRow:last-child {
@@ -321,7 +391,7 @@
     cursor: pointer;
 }
 
-.chat-card{
+.chat-card > :first-child{
 	display: grid;
 	width: 100%;
 	font-family: Cambria, Times, 'Times New Roman', serif;
@@ -359,7 +429,7 @@
 
 
 /*--- Item Sheet Grid Scheme ---*/
-.grid-item-sheet{
+.grid-item-sheet > :first-child{
 	display: grid;
 	grid-template-columns: 15% 35% 15% 30%;
 	grid-template-rows: auto auto;
@@ -368,9 +438,14 @@
 .grid-item-text{
 	grid-column: 1 / span 4;
 }
+.grid-item-text p{
+	margin-top:0px;
+	font-family: "Mayflower";
+}
+	
 
 /* --- Contracts --- */
-.grid-contracts{
+.grid-contracts > :first-child{
 	display: grid;
 	width: 100%;
 	grid-template-columns: auto 1fr;
@@ -543,6 +618,9 @@
 .main-columns{
 	gap:25px;
 }
+.main-columns .flexrow{
+	align-items: flex-start;
+}
 
 .h-small{
 	min-height: 50px;
@@ -562,9 +640,9 @@
     text-decoration: none;
     margin-bottom: 10px;
     background: url(../sheet/deco1.svg);
-	background-size: 350px, auto;
-	background-repeat: no-repeat;
-	background-position: center bottom;
+    background-size: 350px, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
 }
 
  .my-deco2 {
@@ -593,6 +671,18 @@
 	font-size: 1.35rem;
 	line-height: 4rem;
 	margin-top: -2rem;
+	pointer-events: none;
+}
+.my-title-click{
+	font-family: 'LHF_Encore', Beau Rivage, cursive;
+	font-size: 1.35rem;
+}
+.writing-title{
+	font-family: 'LHF_Encore', Beau Rivage, cursive;
+	font-size: 1.35rem;
+}
+.writing-title input{
+	text-align:left;
 }
 
 .my-title2 {
@@ -620,6 +710,8 @@
 	line-height: 110%;
 	font-weight: bold;
 	text-align: center;
+	color: #3f3f3f;
+	border-bottom: 1px solid #3f3f3f;
 }
 
 .attrib-cb{
@@ -716,11 +808,6 @@
     min-height: 4em;
 }
 
-.sheet input[type="text"], select{
-	border: none;
-	border-bottom: 1px solid gray;
-	background: none;
-}
 
 .sheet .hearts input[type="checkbox"] {
     -webkit-appearance: initial;
@@ -815,6 +902,7 @@
     height: 20px;
     cursor: pointer;
 	transform: scale(1.2);
+	margin-top:1px;
 }
 
 .sheet .stress1 input[type="checkbox"]:checked {
@@ -942,9 +1030,7 @@
 	height:70px;
 	margin-top:-10px;
 }
-.custom-system-sheet-actions {
-	height:0px;
-}
+
 
 .sheet .circle-cb input[type="checkbox"] {
     -webkit-appearance: initial;
@@ -1045,6 +1131,11 @@
 .chat-message .message-content {
 	font-family: 'Mayflower';
 	font-size: 15px;
+}
+.chat-message .message-content h2{
+	font-family: 'Mayflower';
+	font-size: 1.5em;
+	font-weight:normal;
 }
 .chat-message .message-content h1{
 	font-family: 'LHF_Encore', Beau Rivage, cursive;
@@ -1176,10 +1267,10 @@
 	text-align:center;
 	width:50%;
 }
-.custom-system-user-input-button[data-action="sub-10"] {
+.custom-system-user-input-button[data-inputaction="sub-10"] {
 	display:none;
 }
-.custom-system-user-input-button[data-action="add-10"] {
+.custom-system-user-input-button[data-inputaction="add-10"] {
 	display:none;
 }
 .custom-system-user-input-block {
@@ -1228,6 +1319,13 @@
 }
 .checkboxgeneric {
 	margin:0px;
+	min-height:20px;
+	margin-top:2px;
+	margin-bottom:2px;
+}
+.checkboxgeneric input[type="checkbox"]{
+	min-height:20px;
+	min-width:20px;
 }
 .stress1 {
 	margin:0px;
@@ -1262,6 +1360,8 @@
 	border-width:1px;
 	border-style: solid;
 	background-color:transparent;
+	min-height:20px;
+	min-width:20px;
 }
 .grid-contracts-cb input[type="checkbox"]:checked {
 	-webkit-appearance: initial;
@@ -1285,12 +1385,18 @@
 	text-align:left;
 	margin-top:15px;
 }
-.contractname {
+.contractname  > :first-child{
 	display:grid;
 	grid-template-columns: auto auto;
 	gap:0px;
 	width:100%;
 	text-align:center;
+}
+.enemyheader >:first-child{
+	display:grid;
+	grid-template-columns: auto 50%;
+	gap:0px;
+	width:100%;
 }
 .contracts-text-object h2{
 	font-family: 'LHF_Encore', Beau Rivage, cursive;
@@ -1298,7 +1404,9 @@
     line-height: 110%;
     font-weight: bold;
     text-align: center;
-	border-bottom: 1px solid var(--color-underline-header);
+	border-bottom: 1px solid #3f3f3f;
+	color: #3f3f3f;
+	margin:0px;
 }
 .contracts-text-object p{
 	text-align: center;
@@ -1330,6 +1438,7 @@
 }
 .precio {
 	font-size: x-large;
+	font-family: 'Mayflower';
 }
 .precio input[type="text"]{
 	text-align:center;
@@ -1357,7 +1466,7 @@
 .subpanelstress div:empty{
 	display:none;
 }
-.panelcajascruc {
+.panelcajascruc  > :first-child{
 	margin:0px;
 	display:grid;
 	grid-template-columns:20% 75%;
@@ -1380,7 +1489,7 @@
 .left_conditions {
 	justify-content: end;
 }
-.sheet .custom-system-panel .panelconddef {
+.sheet .custom-system-panel .panelconddef >:first-child{
 	column-gap:25px;
 	row-gap:0px;
 	display:grid;
@@ -1388,17 +1497,23 @@
 	margin:auto;
 }
 .panelcond_izq {
+	margin:0px;
+}
+.panelcond_izq  > :first-child{
 	gap:0px;
 	display:grid;
 	grid-template-columns:75% 25%;
 	width: fit-content;
 }
-.condextra {
+.condextra{
 	grid-column: 1 / span 2;
+	margin:0px;
+}
+.condextra  > :first-child{
 	gap: 0px;
     display: grid;
     grid-template-columns: 85% 15%;
-	width:91.6%;
+	width:92.6%;
 }
 .textcond input[type="text"]{
 	text-align:center;
@@ -1410,4 +1525,10 @@
 }
 .dice-tooltip .dice-rolls .roll.d6 {
 	background: transparent;
+}
+.experiencias table tr:first-child {
+	display:none;
+}
+.experiencias .custom-system-dynamicRow td {
+	padding:0px;
 }

@@ -84,6 +84,8 @@ Hooks.once("ready", function() {
 						setTimeout(() => {
 							game.macros.getName('Roll - Reroll - All In (Integrado)').update({ownership:{default:2}});
 						}, 5000);
+						ui.notifications.info(game.i18n.localize("Templates importadas. Recargando mundo en 6sec..."), {permanent: true});
+						window.setTimeout(window.location.reload.bind(window.location), 7000);
 					});
 				}
 				}, 100);
@@ -144,6 +146,8 @@ Hooks.once("ready", function() {
 						setTimeout(() => {
 							game.macros.getName('Roll - Reroll - All In (Integrado)').update({ownership:{default:2}});
 						}, 5000);
+						ui.notifications.info(game.i18n.localize("Templates importadas. Recargando mundo en 6sec..."), {permanent: true});
+						window.setTimeout(window.location.reload.bind(window.location), 7000);
 					});
 				}
 				}, 500);
