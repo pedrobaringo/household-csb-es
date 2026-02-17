@@ -1,0 +1,48 @@
+/* modules/household-csb-es/styles/outhold.css */
+
+:root {
+	--dice-background-color: white;
+	--background-imagen: url(../sheet/Fondo_Outhold.webp);
+	--titlefont: 'Blood_Crow';
+}
+
+.my-title {
+    line-height: unset;
+    margin-top: unset;
+	pointer-events: unset;
+	font-weight: normal;
+}
+.my-title2 {
+    line-height: unset;
+    margin-top: unset;
+    pointer-events: unset;
+	font-weight: normal;
+}
+.sheet .charname input[type="text"], .itemname input[type="text"], .tablacontratos .custom-system-dynamicRow td:first-child a,.chat-message .message-content h1, .chat-message .message-header .message-sender, .contracts-text-object h2, .my-subtitle1, .my-title2 b, .my-title b{
+    font-weight: normal;
+}
+.custom-system-user-inputs td:first-child{
+	font-weight:normal;
+}
+.my-deco1 {
+    text-decoration: none;
+    margin-bottom: unset;
+    background: unset;
+    background-size: unset;
+    background-repeat: unset;
+    background-position: unset;
+}
+.grid-contracts-cb [type="checkbox"] {
+    margin-top: 5px;
+}
+
+.my-title2 .custom-system-label-bold, .my-title .custom-system-label-bold {
+    border: solid 20px;
+    border-width: 15px 40px 15px 40px;
+    border-image-source: url(../sheet/ThornBorder.webp);
+    border-image-slice: 50%;
+    border-image-repeat: stretch;
+    border-image-width: 50px;
+    margin-top: -15px;
+    margin-bottom: -15px;
+}

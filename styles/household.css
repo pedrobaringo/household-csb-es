@@ -7,6 +7,10 @@
   src: url('../fonts/lhf-encore-distressed.ttf');
 }
 @font-face {
+  font-family: 'Blood_Crow';
+  src: url('../fonts/BloodCrow.ttf');
+}
+@font-face {
     font-family: "Mayflower";
     src: url("../fonts/MAYFLOWERSMOOTHPRO.OTF");
 }
@@ -14,10 +18,13 @@
 /*--- Sheet background, header, changes in chat fonts ---*/
 
 .character .window-content, .equippableItem .window-content, .custom-dialog .window-content {
-	background: url(../sheet/sheet_bg.webp);
+	background: var(--background-imagen);
 	background-repeat: no-repeat;
  	background-size: 100% 100%;
 	padding:1rem;
+	color: #3f3f3f;
+}
+.custom-dialog .window-content h1, .custom-dialog .window-content h2, .custom-dialog .window-content h3, .custom-dialog .window-content h4{
 	color: #3f3f3f;
 }
 .character .grid {
@@ -111,7 +118,7 @@
   border: 2px groove #3f3f3f;
 }
 .chat-message .message-header .message-sender {
-	font-family: 'LHF_Encore', Beau Rivage, cursive;
+	font-family: var(--titlefont), Beau Rivage, cursive;
 	font-size: 1.3rem;
 	font-weight: 600;
 }
@@ -667,18 +674,19 @@
 }
 
 .my-title{
-	font-family: 'LHF_Encore', Beau Rivage, cursive;
+	font-family: var(--titlefont), Beau Rivage, cursive;
 	font-size: 1.35rem;
 	line-height: 4rem;
 	margin-top: -2rem;
 	pointer-events: none;
+	font-weight: bold;
 }
 .my-title-click{
-	font-family: 'LHF_Encore', Beau Rivage, cursive;
+	font-family: var(--titlefont), Beau Rivage, cursive;
 	font-size: 1.35rem;
 }
 .writing-title{
-	font-family: 'LHF_Encore', Beau Rivage, cursive;
+	font-family: var(--titlefont), Beau Rivage, cursive;
 	font-size: 1.35rem;
 }
 .writing-title input{
@@ -686,7 +694,7 @@
 }
 
 .my-title2 {
-    font-family: 'LHF_Encore', Beau Rivage, cursive;
+    font-family: var(--titlefont), Beau Rivage, cursive;
     font-size: 1.35rem;
     line-height: 4rem;
 	margin-top: -2rem;
@@ -694,7 +702,7 @@
 }
 
 .my-attrib{
-	font-family: 'LHF_Encore', Beau Rivage, cursive;
+	font-family: var(--titlefont), Beau Rivage, cursive;
 	font-size: 2.0em;
 	font-weight: 500;
 	text-transform: capitalize;
@@ -705,7 +713,7 @@
 }
 
 .my-subtitle1{
-	font-family: 'LHF_Encore', Beau Rivage, cursive;
+	font-family: var(--titlefont), Beau Rivage, cursive;
 	font-size: 1.4rem;
 	line-height: 110%;
 	font-weight: bold;
@@ -1013,7 +1021,7 @@
 }
 
 .sheet .charname input[type="text"], .itemname input[type="text"]{
-	font-family: 'LHF_Encore', Beau Rivage, cursive;
+	font-family: var(--titlefont), Beau Rivage, cursive;
 	font-weight: bold;
 	border: none;
   font-size: 35px;
@@ -1138,14 +1146,14 @@
 	font-weight:normal;
 }
 .chat-message .message-content h1{
-	font-family: 'LHF_Encore', Beau Rivage, cursive;
+	font-family: var(--titlefont), Beau Rivage, cursive;
 	font-weight: 600;
 	text-align:center;
 	font-size:35px;
 	border:0px;
 }
 .chat-message .message-header .message-sender{
-	font-family: 'LHF_Encore', Beau Rivage, cursive;
+	font-family: var(--titlefont), Beau Rivage, cursive;
 	text-align:center;
 	font-size:30px;
 	text-wrap: wrap;
@@ -1186,7 +1194,7 @@
 	text-shadow: 0px 0px 5px #fcfbf8,0px 0px 5px #fcfbf8,0px 0px 10px #fcfbf8,0px 0px 10px #fcfbf8,0px 0px 10px #fcfbf8,0px 0px 10px #fcfbf8;
 }
 .chat-message {
-	background: url(../sheet/sheet_bg.webp);
+	background: var(--background-imagen);
 	background-repeat: no-repeat;
  	background-size: 100% 100%;
 	background-clip: border-box;
@@ -1244,7 +1252,7 @@
 	flex-wrap:wrap;
 }
 .window-app .window-content {
-		background: url(../sheet/sheet_bg.webp);
+		background: var(--background-imagen);
 	background-repeat: no-repeat;
  	background-size: cover;
 }
@@ -1261,7 +1269,7 @@
 	border:0px;
 }
 .custom-system-user-inputs td:first-child {
-	font-family: 'LHF_Encore', Beau Rivage, cursive;
+	font-family: var(--titlefont), Beau Rivage, cursive;
 	font-size: 20px;
 	font-weight: 600;
 	text-align:center;
@@ -1399,7 +1407,7 @@
 	width:100%;
 }
 .contracts-text-object h2{
-	font-family: 'LHF_Encore', Beau Rivage, cursive;
+	font-family: var(--titlefont), Beau Rivage, cursive;
     font-size: 1.4rem;
     line-height: 110%;
     font-weight: bold;
@@ -1421,7 +1429,7 @@
 	text-align:center;
 }
 .tablacontratos .custom-system-dynamicRow td:first-child a{
-	font-family: 'LHF_Encore', Beau Rivage, cursive;
+	font-family: var(--titlefont), Beau Rivage, cursive;
     font-size: 1.5rem;
     line-height: 110%;
     font-weight: bold;
@@ -1531,4 +1539,118 @@
 }
 .experiencias .custom-system-dynamicRow td {
 	padding:0px;
+}
+.sevstresschecked, .sevstresscheckedspecial {
+	min-width:20px;
+	min-height:20px;
+	background-color: transparent;
+	border:1px solid black;
+	border-radius:50%;
+	margin:0px;
+	padding:13px;
+	margin-left:-10px;
+}
+.sevstresscheckedspecial .custom-system-label {
+	min-width:25px;
+	min-height:25px;
+	background: url(../sheet/Special_stress_black.png);
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.sevstresschecked .custom-system-label {
+	min-width:20px;
+	min-height:20px;
+	background-color:black;
+}
+details:has(.panelestresevero) {
+	margin-top:-13px;
+}
+.panelestresevero {
+    width: 40%;
+}
+.colosistress input[type="text"]{
+	font-family:var(--titlefont);
+	font-size:40px;
+	height:40px;
+}
+.colossistresspanel {
+	width:50%;
+	margin:auto;
+}
+.colossistresspanel >:first-child {
+	row-gap:0px;
+}
+.totaltext p {
+	margin:0px;
+	font-size: 15px;
+}
+.custom-system-details-panelneutral summary, .custom-system-details-panelvexed summary, .custom-system-details-panelenraged summary {
+	font-family:var(--titlefont);
+	font-size:25px
+}
+.grid-trait-colossi .custom-system-dynamicRow{
+	display: grid;
+	grid-template-columns: auto 15px;
+	grid-template-rows: auto;
+   	width: 98%;
+  	height: auto;
+  	gap: 5px 5px;
+	margin-bottom: 5px;
+	border-width: 0 0 1px 0;
+	border-color: #404040;
+	border-style: solid;
+	row-gap:0px;
+}
+.grid-trait-colossi .custom-system-dynamicRow td:last-child {
+	padding:0px;
+}
+
+.grid-trait-colossi .custom-system-dynamicRow:last-child {
+	border-width: 0 0 0 0;
+}
+
+.grid-trait-colossi .custom-system-item-container-image {
+	position: relative;
+	object-fit: contain;
+	padding: 0px;
+	margin: 0px;
+	max-width: 30px;
+	max-height: 30px;
+	border-radius: 4px;
+	vertical-align: top;
+}
+
+.grid-trait-colossi .fa-trash{
+	display:block;
+	position: relative;
+	top: 5px;
+}
+.grid-trait-colossi .custom-system-dynamicRow td:first-child a img{
+	display:none;
+}
+.grid-trait-colossi .custom-system-dynamicRow td:first-child a{
+	font-family: var(--titlefont), Beau Rivage, cursive;
+    font-size: 20px;
+    line-height: 110%;
+    font-weight: normal;
+    text-align: center;
+	color: #3f3f3f;
+	background: transparent;
+	border:0px;
+	padding:0px;
+}
+.grid-trait-colossi .custom-system-dynamicRow td:first-child {
+	grid-column: 1 / span 2;
+}
+.grid-trait-colossi .custom-system-dynamicRow td {
+	padding:0px;
+}
+	
+
+
+
+:root {
+	--dice-background-color: white;
+	--background-imagen: url(../sheet/sheet_bg.webp);
+	--titlefont: 'LHF_Encore';
 }

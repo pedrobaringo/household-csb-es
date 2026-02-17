@@ -9,6 +9,28 @@ Hooks.once("init", function() {
         default: false,
         type: Boolean
     })
+	game.settings.register("household-csb-es", "ambientacion", {
+        name: "Ambientación",
+        hint: "Selecciona que ambientación quieres usar para el diseño de las fichas.",
+        scope: "world",
+        config: true,
+		requiresReload: true,
+		type: String,
+		choices: {
+			"household": "Household",
+			"outhold": "Outhold"
+		},
+		default: "household",
+		onChange: value => {
+			if (value=="household") {
+				console.log(value);
+				game.settings.set("custom-system-builder", "customStyle", "");
+			} else if (value=="outhold") {
+				console.log(value);
+				game.settings.set("custom-system-builder", "customStyle", "modules/household-csb-es/styles/outhold.css");
+			}
+		}
+	})
 })
 
 Hooks.once("ready", function() {
