@@ -123,9 +123,6 @@
 	font-weight: 600;
 }
 
-.sheet header{
-	align-items: start !important;
-}
  .sheet .custom-system-actor header.sheet-header .profile-img-container img{
 	object-fit: cover;
 	object-position: center top;
@@ -1644,6 +1641,28 @@ details:has(.panelestresevero) {
 }
 .grid-trait-colossi .custom-system-dynamicRow td {
 	padding:0px;
+}
+.hou-spade:before {
+    font-family: FontAwesome;
+    content: url(../sheet/spades-filled.svg);
+}
+.hou-clover:before {
+    font-family: FontAwesome;
+    content: url(../sheet/clubs-filled.svg);
+}
+.hou-heart:before {
+    font-family: FontAwesome;
+    content: url(../sheet/hearts-filled.svg);
+}
+.hou-diam:before {
+    font-family: FontAwesome;
+    content: url(../sheet/diamonds-filled.svg);
+}
+.houicon {
+    height:1rem;
+    width:1rem;
+    margin-top:-10px;
+    margin-bottom:15px;
 }
 	
 
