@@ -1,8 +1,15 @@
-2026/02/24-20:26:55.530453 7fb9e17bd700 Recovering log #1376
-2026/02/24-20:26:55.536195 7fb9e17bd700 Delete type=0 #1376
-2026/02/24-20:26:55.536221 7fb9e17bd700 Delete type=3 #1374
-2026/02/25-15:15:05.813457 7fb4c3fff700 Level-0 table #1381: started
-2026/02/25-15:15:05.815279 7fb4c3fff700 Level-0 table #1381: 0 bytes OK
-2026/02/25-15:15:05.817722 7fb4c3fff700 Delete type=0 #1379
-2026/02/25-15:15:05.821094 7fb4c3fff700 Manual compaction at level-0 from '!actors!4DQGLSMwpWMM1RKs' @ 72057594037927935 : 1 .. '!actors!xLDPUBjFaciFW3F8' @ 0 : 0; will stop at (end)
-2026/02/25-15:15:05.821124 7fb4c3fff700 Manual compaction at level-1 from '!actors!4DQGLSMwpWMM1RKs' @ 72057594037927935 : 1 .. '!actors!xLDPUBjFaciFW3F8' @ 0 : 0; will stop at (end)
+2026/02/28-11:16:35.908218 7fb9e1fbe700 Recovering log #1380
+2026/02/28-11:16:35.913725 7fb9e1fbe700 Delete type=3 #1378
+2026/02/28-11:16:35.913779 7fb9e1fbe700 Delete type=0 #1380
+2026/03/01-12:08:07.887442 7fb4c3fff700 Level-0 table #1385: started
+2026/03/01-12:08:07.893219 7fb4c3fff700 Level-0 table #1385: 134564 bytes OK
+2026/03/01-12:08:07.895501 7fb4c3fff700 Delete type=0 #1383
+2026/03/01-12:08:07.900265 7fb4c3fff700 Manual compaction at level-0 from '!actors!4DQGLSMwpWMM1RKs' @ 72057594037927935 : 1 .. '!actors!xLDPUBjFaciFW3F8' @ 0 : 0; will stop at (end)
+2026/03/01-12:08:07.900311 7fb4c3fff700 Manual compaction at level-1 from '!actors!4DQGLSMwpWMM1RKs' @ 72057594037927935 : 1 .. '!actors!xLDPUBjFaciFW3F8' @ 0 : 0; will stop at '!actors!xLDPUBjFaciFW3F8' @ 1784 : 1
+2026/03/01-12:08:07.900317 7fb4c3fff700 Compacting 1@1 + 1@2 files
+2026/03/01-12:08:07.907508 7fb4c3fff700 Generated table #1386@1: 5 keys, 134525 bytes
+2026/03/01-12:08:07.907525 7fb4c3fff700 Compacted 1@1 + 1@2 files => 134525 bytes
+2026/03/01-12:08:07.908949 7fb4c3fff700 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/03/01-12:08:07.909014 7fb4c3fff700 Delete type=2 #1385
+2026/03/01-12:08:07.909133 7fb4c3fff700 Delete type=2 #1365
+2026/03/01-12:08:07.922318 7fb4c3fff700 Manual compaction at level-1 from '!actors!xLDPUBjFaciFW3F8' @ 1784 : 1 .. '!actors!xLDPUBjFaciFW3F8' @ 0 : 0; will stop at (end)
