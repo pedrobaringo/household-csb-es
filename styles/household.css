@@ -1565,6 +1565,9 @@ details:has(.panelestresevero) {
 .panelestresevero {
     width: 40%;
 }
+details:has(.panelvolumenhh) {
+	margin-top:-13px;
+}
 .colosistress input[type="text"]{
 	font-family:var(--titlefont);
 	font-size:40px;

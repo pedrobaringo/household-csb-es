@@ -1,15 +1,8 @@
-2026/03/02-13:17:23.504223 7fb9e17bd700 Recovering log #1263
-2026/03/02-13:17:23.514198 7fb9e17bd700 Delete type=3 #1261
-2026/03/02-13:17:23.514236 7fb9e17bd700 Delete type=0 #1263
-2026/03/02-15:42:14.789261 7fb4c3fff700 Level-0 table #1269: started
-2026/03/02-15:42:14.793841 7fb4c3fff700 Level-0 table #1269: 3885 bytes OK
-2026/03/02-15:42:14.795902 7fb4c3fff700 Delete type=0 #1267
-2026/03/02-15:42:14.807799 7fb4c3fff700 Manual compaction at level-0 from '!folders!4NjSAbEGZ3airGyd' @ 72057594037927935 : 1 .. '!items!zgzdioVLl7j3Awiw' @ 0 : 0; will stop at (end)
-2026/03/02-15:42:14.807858 7fb4c3fff700 Manual compaction at level-1 from '!folders!4NjSAbEGZ3airGyd' @ 72057594037927935 : 1 .. '!items!zgzdioVLl7j3Awiw' @ 0 : 0; will stop at '!items!kf1lKdAhPMaVjzaF' @ 1386 : 1
-2026/03/02-15:42:14.807862 7fb4c3fff700 Compacting 1@1 + 1@2 files
-2026/03/02-15:42:14.827056 7fb4c3fff700 Generated table #1270@1: 474 keys, 561926 bytes
-2026/03/02-15:42:14.827071 7fb4c3fff700 Compacted 1@1 + 1@2 files => 561926 bytes
-2026/03/02-15:42:14.828612 7fb4c3fff700 compacted to: files[ 0 0 1 0 0 0 0 ]
-2026/03/02-15:42:14.828656 7fb4c3fff700 Delete type=2 #1269
-2026/03/02-15:42:14.828765 7fb4c3fff700 Delete type=2 #1265
-2026/03/02-15:42:14.832951 7fb4c3fff700 Manual compaction at level-1 from '!items!kf1lKdAhPMaVjzaF' @ 1386 : 1 .. '!items!zgzdioVLl7j3Awiw' @ 0 : 0; will stop at (end)
+2026/03/03-20:33:05.765252 7fb9e27bf700 Recovering log #1278
+2026/03/03-20:33:05.771086 7fb9e27bf700 Delete type=3 #1276
+2026/03/03-20:33:05.771120 7fb9e27bf700 Delete type=0 #1278
+2026/03/03-20:51:13.606360 7fb4c3fff700 Level-0 table #1284: started
+2026/03/03-20:51:13.606894 7fb4c3fff700 Level-0 table #1284: 0 bytes OK
+2026/03/03-20:51:13.609088 7fb4c3fff700 Delete type=0 #1282
+2026/03/03-20:51:13.609176 7fb4c3fff700 Manual compaction at level-0 from '!folders!4NjSAbEGZ3airGyd' @ 72057594037927935 : 1 .. '!items!zgzdioVLl7j3Awiw' @ 0 : 0; will stop at (end)
+2026/03/03-20:51:13.609201 7fb4c3fff700 Manual compaction at level-1 from '!folders!4NjSAbEGZ3airGyd' @ 72057594037927935 : 1 .. '!items!zgzdioVLl7j3Awiw' @ 0 : 0; will stop at (end)
