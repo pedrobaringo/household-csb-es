@@ -1,8 +1,18 @@
-2026/03/03-20:33:05.765252 7fb9e27bf700 Recovering log #1278
-2026/03/03-20:33:05.771086 7fb9e27bf700 Delete type=3 #1276
-2026/03/03-20:33:05.771120 7fb9e27bf700 Delete type=0 #1278
-2026/03/03-20:51:13.606360 7fb4c3fff700 Level-0 table #1284: started
-2026/03/03-20:51:13.606894 7fb4c3fff700 Level-0 table #1284: 0 bytes OK
-2026/03/03-20:51:13.609088 7fb4c3fff700 Delete type=0 #1282
-2026/03/03-20:51:13.609176 7fb4c3fff700 Manual compaction at level-0 from '!folders!4NjSAbEGZ3airGyd' @ 72057594037927935 : 1 .. '!items!zgzdioVLl7j3Awiw' @ 0 : 0; will stop at (end)
-2026/03/03-20:51:13.609201 7fb4c3fff700 Manual compaction at level-1 from '!folders!4NjSAbEGZ3airGyd' @ 72057594037927935 : 1 .. '!items!zgzdioVLl7j3Awiw' @ 0 : 0; will stop at (end)
+2026/03/03-21:26:28.455546 7fb9e0fbc700 Recovering log #1283
+2026/03/03-21:26:28.461286 7fb9e0fbc700 Delete type=3 #1281
+2026/03/03-21:26:28.461317 7fb9e0fbc700 Delete type=3 #1266
+2026/03/03-21:26:28.461341 7fb9e0fbc700 Delete type=0 #1283
+2026/03/03-21:26:28.461359 7fb9e0fbc700 Delete type=0 #1268
+2026/03/03-21:26:28.461375 7fb9e0fbc700 Delete type=2 #1270
+2026/03/03-21:29:03.677682 7fb4c3fff700 Level-0 table #1288: started
+2026/03/03-21:29:03.682201 7fb4c3fff700 Level-0 table #1288: 1988 bytes OK
+2026/03/03-21:29:03.684043 7fb4c3fff700 Delete type=0 #1286
+2026/03/03-21:29:03.689489 7fb4c3fff700 Manual compaction at level-0 from '!folders!4NjSAbEGZ3airGyd' @ 72057594037927935 : 1 .. '!items!zgzdioVLl7j3Awiw' @ 0 : 0; will stop at (end)
+2026/03/03-21:29:03.700861 7fb4c3fff700 Manual compaction at level-1 from '!folders!4NjSAbEGZ3airGyd' @ 72057594037927935 : 1 .. '!items!zgzdioVLl7j3Awiw' @ 0 : 0; will stop at '!items!ynAi8QZOHaHOtcQP' @ 1403 : 1
+2026/03/03-21:29:03.700867 7fb4c3fff700 Compacting 1@1 + 1@2 files
+2026/03/03-21:29:03.720659 7fb4c3fff700 Generated table #1289@1: 475 keys, 561957 bytes
+2026/03/03-21:29:03.720675 7fb4c3fff700 Compacted 1@1 + 1@2 files => 561957 bytes
+2026/03/03-21:29:03.722148 7fb4c3fff700 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/03/03-21:29:03.722243 7fb4c3fff700 Delete type=2 #1280
+2026/03/03-21:29:03.722394 7fb4c3fff700 Delete type=2 #1288
+2026/03/03-21:29:03.732508 7fb4c3fff700 Manual compaction at level-1 from '!items!ynAi8QZOHaHOtcQP' @ 1403 : 1 .. '!items!zgzdioVLl7j3Awiw' @ 0 : 0; will stop at (end)
