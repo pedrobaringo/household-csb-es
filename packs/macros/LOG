@@ -1,10 +1,15 @@
-2026/03/05-18:54:07.662562 7fb9e17bd700 Recovering log #1395
-2026/03/05-18:54:07.667581 7fb9e17bd700 Delete type=3 #1381
-2026/03/05-18:54:07.667611 7fb9e17bd700 Delete type=0 #1383
-2026/03/05-18:54:07.667628 7fb9e17bd700 Delete type=0 #1395
-2026/03/05-18:54:07.667646 7fb9e17bd700 Delete type=3 #1393
-2026/03/05-18:56:47.701557 7fb4c3fff700 Level-0 table #1400: started
-2026/03/05-18:56:47.701973 7fb4c3fff700 Level-0 table #1400: 0 bytes OK
-2026/03/05-18:56:47.704084 7fb4c3fff700 Delete type=0 #1398
-2026/03/05-18:56:47.709946 7fb4c3fff700 Manual compaction at level-0 from '!folders!bjQmZJAihkVKvmCf' @ 72057594037927935 : 1 .. '!macros!zFCxYmQNxIcAKWVN' @ 0 : 0; will stop at (end)
-2026/03/05-18:56:47.710015 7fb4c3fff700 Manual compaction at level-1 from '!folders!bjQmZJAihkVKvmCf' @ 72057594037927935 : 1 .. '!macros!zFCxYmQNxIcAKWVN' @ 0 : 0; will stop at (end)
+2026/04/09-18:24:57.130136 7fe5be7be700 Recovering log #1483
+2026/04/09-18:24:57.135575 7fe5be7be700 Delete type=3 #1481
+2026/04/09-18:24:57.135610 7fe5be7be700 Delete type=0 #1483
+2026/04/09-19:07:49.402067 7fe09ffff700 Level-0 table #1488: started
+2026/04/09-19:07:49.404717 7fe09ffff700 Level-0 table #1488: 7937 bytes OK
+2026/04/09-19:07:49.406054 7fe09ffff700 Delete type=0 #1486
+2026/04/09-19:07:49.407762 7fe09ffff700 Manual compaction at level-0 from '!folders!bjQmZJAihkVKvmCf' @ 72057594037927935 : 1 .. '!macros!zFCxYmQNxIcAKWVN' @ 0 : 0; will stop at (end)
+2026/04/09-19:07:49.411917 7fe09ffff700 Manual compaction at level-1 from '!folders!bjQmZJAihkVKvmCf' @ 72057594037927935 : 1 .. '!macros!zFCxYmQNxIcAKWVN' @ 0 : 0; will stop at '!macros!zFCxYmQNxIcAKWVN' @ 142 : 1
+2026/04/09-19:07:49.411923 7fe09ffff700 Compacting 1@1 + 1@2 files
+2026/04/09-19:07:49.413795 7fe09ffff700 Generated table #1489@1: 13 keys, 7937 bytes
+2026/04/09-19:07:49.413804 7fe09ffff700 Compacted 1@1 + 1@2 files => 7937 bytes
+2026/04/09-19:07:49.414994 7fe09ffff700 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/04/09-19:07:49.415042 7fe09ffff700 Delete type=2 #1488
+2026/04/09-19:07:49.415090 7fe09ffff700 Delete type=2 #1342
+2026/04/09-19:07:49.415159 7fe09ffff700 Manual compaction at level-1 from '!macros!zFCxYmQNxIcAKWVN' @ 142 : 1 .. '!macros!zFCxYmQNxIcAKWVN' @ 0 : 0; will stop at (end)

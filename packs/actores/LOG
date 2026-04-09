@@ -1,11 +1,15 @@
-2026/03/05-18:54:07.642849 7fb9e0fbc700 Recovering log #1413
-2026/03/05-18:54:07.648975 7fb9e0fbc700 Delete type=3 #1399
-2026/03/05-18:54:07.649018 7fb9e0fbc700 Delete type=0 #1413
-2026/03/05-18:54:07.649059 7fb9e0fbc700 Delete type=3 #1411
-2026/03/05-18:54:07.649084 7fb9e0fbc700 Delete type=0 #1401
-2026/03/05-18:54:07.649100 7fb9e0fbc700 Delete type=2 #1386
-2026/03/05-18:56:47.686157 7fb4c3fff700 Level-0 table #1419: started
-2026/03/05-18:56:47.686677 7fb4c3fff700 Level-0 table #1419: 0 bytes OK
-2026/03/05-18:56:47.690058 7fb4c3fff700 Delete type=0 #1417
-2026/03/05-18:56:47.697834 7fb4c3fff700 Manual compaction at level-0 from '!actors!4DQGLSMwpWMM1RKs' @ 72057594037927935 : 1 .. '!actors!xLDPUBjFaciFW3F8' @ 0 : 0; will stop at (end)
-2026/03/05-18:56:47.697903 7fb4c3fff700 Manual compaction at level-1 from '!actors!4DQGLSMwpWMM1RKs' @ 72057594037927935 : 1 .. '!actors!xLDPUBjFaciFW3F8' @ 0 : 0; will stop at (end)
+2026/04/09-18:24:57.108713 7fe5bdfbd700 Recovering log #1502
+2026/04/09-18:24:57.114503 7fe5bdfbd700 Delete type=0 #1502
+2026/04/09-18:24:57.114534 7fe5bdfbd700 Delete type=3 #1500
+2026/04/09-19:07:49.384111 7fe09ffff700 Level-0 table #1507: started
+2026/04/09-19:07:49.390252 7fe09ffff700 Level-0 table #1507: 137796 bytes OK
+2026/04/09-19:07:49.391609 7fe09ffff700 Delete type=0 #1505
+2026/04/09-19:07:49.393525 7fe09ffff700 Manual compaction at level-0 from '!actors!4DQGLSMwpWMM1RKs' @ 72057594037927935 : 1 .. '!actors!xLDPUBjFaciFW3F8' @ 0 : 0; will stop at (end)
+2026/04/09-19:07:49.393566 7fe09ffff700 Manual compaction at level-1 from '!actors!4DQGLSMwpWMM1RKs' @ 72057594037927935 : 1 .. '!actors!xLDPUBjFaciFW3F8' @ 0 : 0; will stop at '!actors!xLDPUBjFaciFW3F8' @ 1794 : 1
+2026/04/09-19:07:49.393570 7fe09ffff700 Compacting 1@1 + 1@2 files
+2026/04/09-19:07:49.400136 7fe09ffff700 Generated table #1508@1: 5 keys, 137796 bytes
+2026/04/09-19:07:49.400147 7fe09ffff700 Compacted 1@1 + 1@2 files => 137796 bytes
+2026/04/09-19:07:49.401458 7fe09ffff700 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/04/09-19:07:49.401521 7fe09ffff700 Delete type=2 #1415
+2026/04/09-19:07:49.401979 7fe09ffff700 Delete type=2 #1507
+2026/04/09-19:07:49.407716 7fe09ffff700 Manual compaction at level-1 from '!actors!xLDPUBjFaciFW3F8' @ 1794 : 1 .. '!actors!xLDPUBjFaciFW3F8' @ 0 : 0; will stop at (end)
