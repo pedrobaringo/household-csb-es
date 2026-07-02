@@ -1,4 +1,4 @@
-export class Householddice extends Die {
+export class Householddice extends foundry.dice.terms.Die {
     constructor(termData) {
         super(termData);
     }
